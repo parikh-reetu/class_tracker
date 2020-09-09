@@ -50,7 +50,7 @@ if __name__ == "__main__":
     status = 'closed'
     while (status == 'closed'):
         count += 1
-        if count % 3 == 0:
+        if count % 500 == 0:
             textSender(status, count)
         status = checkStatus(count, dept, num)
         time.sleep(5)
